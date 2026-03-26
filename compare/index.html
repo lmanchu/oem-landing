@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IrisGo vs OpenClaw | Why OEMs Choose IrisGo</title>
+    <meta name="description" content="IrisGo vs OpenClaw: Security, speed, personalization, and OEM revenue — a side-by-side comparison for hardware partners.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#1a2b4a',
+                        'brand-blue': '#2563eb',
+                        'brand-gold': '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1a2b4a 0%, #2563eb 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-sm fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <a href="../">
+                <img src="../irisgo-green-full-logo.svg" alt="IrisGo" class="h-8">
+            </a>
+            <span class="text-sm text-gray-500 ml-2">for OEM Partners</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="../" class="text-gray-600 hover:text-brand-blue">Partnership Overview</a>
+            <a href="#comparison" class="text-brand-blue font-semibold">IrisGo vs OpenClaw</a>
+            <a href="#why-irisgo" class="text-gray-600 hover:text-brand-blue">Why IrisGo</a>
+        </div>
+        <a href="https://calendar.app.google/Lf8xB26k7FNxFvuSA" target="_blank" class="bg-brand-blue text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+            Schedule Call
+        </a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="gradient-bg text-white pt-32 pb-16">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <div class="inline-block bg-white/10 backdrop-blur-lg rounded-full px-6 py-2 mb-8 border border-white/20">
+            <span class="text-blue-200 text-sm">OEM Partner Technical Brief</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            IrisGo vs OpenClaw
+        </h1>
+        <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+            Both platforms run AI agents on PCs. The difference is what your hardware team and customers actually get.
+        </p>
+    </div>
+</section>
+
+<!-- TL;DR -->
+<section class="py-12 bg-white border-b">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="p-6">
+                <div class="text-3xl mb-3">🔒</div>
+                <div class="text-lg font-bold text-brand-navy mb-2">On-Device First</div>
+                <p class="text-gray-600 text-sm">Data stays on the PC. No cloud dependency for core functions. Your users' data is their own.</p>
+            </div>
+            <div class="p-6">
+                <div class="text-3xl mb-3">🧠</div>
+                <div class="text-lg font-bold text-brand-navy mb-2">Watch & Learn</div>
+                <p class="text-gray-600 text-sm">IrisGo observes how users work and builds context over time. Agents get smarter the longer your hardware runs.</p>
+            </div>
+            <div class="p-6">
+                <div class="text-3xl mb-3">💰</div>
+                <div class="text-lg font-bold text-brand-navy mb-2">Hardware Story</div>
+                <p class="text-gray-600 text-sm">Local 120B models = saved cloud tokens. Your hardware specs become a selling point, not a cost line.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Side-by-Side Comparison Table -->
+<section id="comparison" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-brand-navy">Side-by-Side Comparison</h2>
+        <p class="text-center text-gray-600 mb-12">What matters to OEM partners and their customers</p>
+
+        <div class="overflow-x-auto">
+            <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-5 text-left bg-gray-100 text-gray-700 font-semibold w-1/4"></th>
+                        <th class="px-6 py-5 text-left bg-brand-navy text-white font-semibold w-[37.5%]">
+                            <div class="flex items-center gap-2">
+                                <span class="text-lg">IrisGo</span>
+                                <span class="bg-brand-gold text-brand-navy text-xs px-2 py-0.5 rounded-full font-bold">Managed Platform</span>
+                            </div>
+                        </th>
+                        <th class="px-6 py-5 text-left bg-gray-700 text-gray-200 font-semibold w-[37.5%]">
+                            <div class="flex items-center gap-2">
+                                <span class="text-lg">OpenClaw</span>
+                                <span class="bg-gray-500 text-gray-200 text-xs px-2 py-0.5 rounded-full font-bold">Open Framework</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <!-- Architecture -->
+                    <tr class="bg-blue-50/50">
+                        <td colspan="3" class="px-6 py-3 font-bold text-brand-navy text-sm uppercase tracking-wide">Architecture</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Processing Model</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">On-device first</strong><br>
+                            <span class="text-sm text-gray-600">Runs 120B models locally via Phison aiDAPTIV. Cloud as fallback only.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>Cloud-dependent</strong><br>
+                            <span class="text-sm text-gray-600">Requires API calls to cloud LLMs for most operations. Local mode limited.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">OEM Integration</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">Turnkey pre-install</strong><br>
+                            <span class="text-sm text-gray-600">White-glove onboarding. Your brand, your UX, our engine underneath.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>DIY assembly</strong><br>
+                            <span class="text-sm text-gray-600">OEM must build UI, user flows, update pipeline, and support stack from scratch.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Model Support</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">Multi-model orchestration</strong><br>
+                            <span class="text-sm text-gray-600">Route tasks to local 120B, cloud GPT/Claude, or specialized models. Best-fit per task.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>Single-provider bias</strong><br>
+                            <span class="text-sm text-gray-600">Primarily tied to one cloud provider. Switching costs are high.</span>
+                        </td>
+                    </tr>
+
+                    <!-- Security & Privacy -->
+                    <tr class="bg-blue-50/50">
+                        <td colspan="3" class="px-6 py-3 font-bold text-brand-navy text-sm uppercase tracking-wide">Security & Privacy</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Data Residency</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">User's device</strong><br>
+                            <span class="text-sm text-gray-600">Personal context, documents, and behavior data never leave the PC.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>Cloud servers</strong><br>
+                            <span class="text-sm text-gray-600">User prompts and documents sent to third-party APIs for processing.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Enterprise Compliance</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">On-device = compliant by default</strong><br>
+                            <span class="text-sm text-gray-600">No data egress. Simplifies GDPR, CCPA, and enterprise procurement.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>Requires cloud DPA</strong><br>
+                            <span class="text-sm text-gray-600">Enterprise buyers must evaluate third-party data processing agreements.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Skill Sandboxing</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">DRM-secured runtime</strong><br>
+                            <span class="text-sm text-gray-600">Skills run in isolated enclaves. IP protection for developers and OEM customizations.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>Open execution</strong><br>
+                            <span class="text-sm text-gray-600">Agent code runs with user-level permissions. Limited isolation.</span>
+                        </td>
+                    </tr>
+
+                    <!-- Intelligence -->
+                    <tr class="bg-blue-50/50">
+                        <td colspan="3" class="px-6 py-3 font-bold text-brand-navy text-sm uppercase tracking-wide">Intelligence & Personalization</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Context Engine</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">Mnemosyne (Watch & Learn)</strong><br>
+                            <span class="text-sm text-gray-600">Continuously learns from user behavior. Builds a personal knowledge graph on-device. Agents improve over weeks and months.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>Stateless by default</strong><br>
+                            <span class="text-sm text-gray-600">Each session starts fresh. No built-in mechanism to learn from user patterns across sessions.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Accuracy Over Time</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">Gets better with use</strong><br>
+                            <span class="text-sm text-gray-600">More usage = better context = more accurate results. Hardware uptime directly improves AI quality.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>Static</strong><br>
+                            <span class="text-sm text-gray-600">Quality depends on prompt engineering. No hardware-linked improvement loop.</span>
+                        </td>
+                    </tr>
+
+                    <!-- Business Model -->
+                    <tr class="bg-blue-50/50">
+                        <td colspan="3" class="px-6 py-3 font-bold text-brand-navy text-sm uppercase tracking-wide">OEM Business Model</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Revenue to OEM</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">$545/user over 3 years</strong><br>
+                            <span class="text-sm text-gray-600">Data annotation ($300) + Skills marketplace ($80) + Subscription share ($165). Recurring.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>$0 recurring</strong><br>
+                            <span class="text-sm text-gray-600">Open-source framework. No built-in monetization path for OEM partners.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Hardware Story</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">"Saved tokens" narrative</strong><br>
+                            <span class="text-sm text-gray-600">Local 120B model = no cloud API costs. Better hardware specs directly save users money.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>No hardware tie-in</strong><br>
+                            <span class="text-sm text-gray-600">Cloud-first approach means hardware specs are irrelevant to AI performance.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Ecosystem</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">5,000+ Skills, 10K+ developers</strong><br>
+                            <span class="text-sm text-gray-600">Pre-built marketplace. Users buy Skills with earned tokens. OEMs earn from every transaction.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>Community-driven</strong><br>
+                            <span class="text-sm text-gray-600">Growing open-source community. Quality and availability vary. No built-in commerce layer.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-700">Time to Ship</td>
+                        <td class="px-6 py-4 bg-green-50">
+                            <strong class="text-green-700">3-6 months</strong><br>
+                            <span class="text-sm text-gray-600">Turnkey integration. IrisGo handles updates, support, and ecosystem management.</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <strong>12-18 months</strong><br>
+                            <span class="text-sm text-gray-600">OEM must build: installer, update mechanism, user support, skill curation, billing.</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Why IrisGo Section -->
+<section id="why-irisgo" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-brand-navy">Why Work With IrisGo</h2>
+        <p class="text-center text-gray-600 mb-16">OpenClaw is a capable framework. IrisGo is what turns it into a business.</p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-200">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl mb-4">🏗️</div>
+                <h3 class="text-xl font-bold text-brand-navy mb-3">Your Hardware Matters Again</h3>
+                <p class="text-gray-600">
+                    With 120B models running locally via Phison aiDAPTIV, your hardware specs directly translate to AI performance.
+                    More RAM, faster NPU = better AI. That is a story your sales team can tell.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-200">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl mb-4">🔐</div>
+                <h3 class="text-xl font-bold text-brand-navy mb-3">Security Without Compromise</h3>
+                <p class="text-gray-600">
+                    Enterprise and government buyers ask one question: "Where does my data go?"
+                    With IrisGo, the answer is simple: it stays on the device. No cloud DPA negotiations, no data egress concerns.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-200">
+                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-2xl mb-4">🧠</div>
+                <h3 class="text-xl font-bold text-brand-navy mb-3">AI That Gets Smarter Over Time</h3>
+                <p class="text-gray-600">
+                    Watch & Learn (Mnemosyne) observes how users work and builds personal context on-device.
+                    After 30 days, IrisGo knows your work patterns, meeting habits, and document preferences. OpenClaw starts from zero every session.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-200">
+                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-2xl mb-4">💰</div>
+                <h3 class="text-xl font-bold text-brand-navy mb-3">Recurring Revenue Built In</h3>
+                <p class="text-gray-600">
+                    IrisGo's three-engine model (Data Annotation + Skills Marketplace + Subscription) generates
+                    $545 per user over 3 years. That's +68% on top of hardware revenue. OpenClaw generates $0 for OEMs.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bottom Line -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="bg-white rounded-2xl shadow-lg p-10 border border-gray-200">
+            <h2 class="text-2xl font-bold text-brand-navy mb-6 text-center">The Bottom Line</h2>
+            <div class="space-y-6 text-gray-700">
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-brand-navy text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                    <p><strong>OpenClaw is a framework.</strong> It gives developers building blocks to create AI agents. But OEMs still need to build the product, the ecosystem, the monetization, and the support layer.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-brand-navy text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                    <p><strong>IrisGo is a platform.</strong> Pre-built agents, on-device intelligence, a Skills Marketplace with 5,000+ Skills, and a revenue model that pays OEMs from day one.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-brand-gold text-brand-navy rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                    <p><strong>They are complementary.</strong> IrisGo runs on the same open standards (agentskills.io compatible). We bring the managed experience, the business model, and the 120B on-device optimization that makes your hardware the hero.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="gradient-bg text-white py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Make Your Hardware the AI Differentiator?</h2>
+        <p class="text-lg text-blue-100 mb-10">
+            Let's discuss how IrisGo + your 120B-capable devices create a story neither can tell alone.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://calendar.app.google/Lf8xB26k7FNxFvuSA" target="_blank" class="bg-white text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition">
+                Schedule Technical Discussion
+            </a>
+            <a href="../" class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition">
+                View Full Partnership Model
+            </a>
+        </div>
+        <div class="mt-10 text-blue-200 text-sm">
+            Questions? Email <a href="mailto:partners@irisgo.ai" class="text-brand-gold hover:underline">partners@irisgo.ai</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-brand-navy text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <div class="mb-4">
+            <span class="text-2xl font-bold">IrisGo</span>
+        </div>
+        <div class="text-blue-200 text-sm">
+            &copy; 2026 IrisGo.AI, Inc. All rights reserved.
+        </div>
+        <div class="mt-4 space-x-6 text-sm">
+            <a href="https://irisgo.ai" class="text-blue-200 hover:text-white">Main Site</a>
+            <a href="../" class="text-blue-200 hover:text-white">OEM Partnership</a>
+            <a href="https://seriesa.irisgo.xyz" class="text-blue-200 hover:text-white">Series A</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
